@@ -1,0 +1,114 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+#header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Form Section */
+section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Reduce the form width */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, select, button {
+  margin-bottom: 12px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input[type="number"], input[type="text"], select, input[type="date"] {
+  width: 100%;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Expense List Table */
+#expense-list {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px; /* Control maximum width */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  background-color: #fafafa;
+}
+
+tr:hover td {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  section {
+    width: 100%; /* Full-width on small screens */
+    margin: 10px;
+    padding: 15px;
+  }
+
+  #expense-list {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  table th, table td {
+    font-size: 12px;
+  }
+}
